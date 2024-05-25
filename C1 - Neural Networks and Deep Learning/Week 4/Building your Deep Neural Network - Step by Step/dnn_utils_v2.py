@@ -70,7 +70,6 @@ def sigmoid_backward(dA, cache):
     Returns:
     dZ -- Gradient of the cost with respect to Z
     """
-    
     Z = cache
     
     s = 1/(1+np.exp(-Z))

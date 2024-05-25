@@ -86,6 +86,10 @@ def linear_activation_backward_test_case():
     Z = np.random.randn(1,2)
     linear_cache = (A, W, b)
     activation_cache = Z
+
+    print("A", A)
+    print("W", W)
+    print("b", b)
     linear_activation_cache = (linear_cache, activation_cache)
     
     return dA, linear_activation_cache
